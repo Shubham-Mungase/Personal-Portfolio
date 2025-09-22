@@ -1,0 +1,11 @@
+body {
+  background: linear-gradient(80deg, rgb(203, 243, 241), white);
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-padding-top: 55px; /* adjust to your navbar height */
+  scroll-behavior: smooth; /* smooth scroll */
+}
+
+ 

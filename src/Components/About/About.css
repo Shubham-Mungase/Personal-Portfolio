@@ -1,0 +1,107 @@
+.about-section {
+  border-radius: 20px;
+  /* box-shadow: 0 8px 25px lightblue; */
+}
+
+/* Profile Image */
+.about-img {
+  width: 350px;
+  height: 350px;
+  object-fit:scale-down;
+  border: 5px solid darkblue;
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Text */
+.about-text {
+  color: #333;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  max-width: 100%;   /* Prevents overflow */
+  word-wrap: break-word;
+ 
+}
+
+
+.highlight {
+  color: darkgoldenrod;
+  font-weight: bold;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .about-section {
+    padding: 40px 15px;
+    margin-top: 3rem;
+  }
+  .about-img {
+    width: 200px;
+    height: 200px;
+  }
+  .about-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* Mobile Landscape (≤ 768px) */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 30px 10px;
+    margin-top: 10rem;
+  }
+  .about-img {
+    width: 180px;
+    height: 180px;
+  }
+  .about-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 20px 8px;
+    margin-top: 10rem;
+  }
+  .about-img {
+    width: 150px;
+    height: 150px;
+  }
+  .about-title {
+    font-size: 1.6rem;
+  }
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 375px) {
+  .about-section {
+    padding: 20px 8px;
+    margin-top: 25rem;
+  }
+  .about-img {
+    width: 150px;
+    height: 150px;
+  }
+  .about-title {
+    font-size: 1.6rem;
+  }
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+

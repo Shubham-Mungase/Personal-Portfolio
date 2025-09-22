@@ -1,0 +1,107 @@
+/* Contact Section */
+.contact-section {
+  /* background: #f9fbfd; */
+  padding: 10px 20px;
+}
+
+/* Form container */
+.form-container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.form-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Info container */
+.info-container {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+.info-container:hover {
+  transform: translateY(-5px);
+}
+.info-container h3 {
+  font-weight: 700;
+}
+.info-container h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.info-container p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.social-link {
+  /* color: #333;  */
+  /* color: darkmagenta; */
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+color: darkmagenta;/* Bootstrap primary blue */
+}
+
+
+/* Contact Info Items */
+.contact-info-item {
+  padding-left: 10px;
+  border-left: 3px solid rgba(255, 255, 255, 0.6);
+}
+.contact-info-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* Form Inputs */
+.form-control {
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 1rem;
+}
+.form-control:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25);
+}
+
+/* Submit Button */
+.btn-primary {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .info-container {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 50px 15px;
+  }
+  .form-container,
+  .info-container {
+    padding: 25px !important;
+  }
+  .info-container h3 {
+    font-size: 1.5rem;
+  }
+  .info-container p {
+    font-size: 0.9rem;
+  }
+}

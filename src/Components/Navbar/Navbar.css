@@ -1,0 +1,88 @@
+body {
+  font-family: serif;
+  padding-top: 45px; /* space for fixed navbar */
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+/* Navbar base styles */
+.navbar {
+  position: fixed; /* keeps it on top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+  background: transparent;
+  box-shadow: none;
+}
+
+.navbarColor {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(100deg, white, rgb(203, 243, 241));
+}
+
+ul {
+  font-size: medium;
+  font-weight: 750;
+}
+
+.nav-link {
+  color: darkmagenta;
+}
+.nav-link:hover {
+  color: darkcyan;
+}
+
+/* Navbar collapse: always right below navbar height */
+.navbar-collapse {
+  position: absolute;
+  top: 100%; /* no fixed px, adapts to navbar height */
+  left: 0;
+  right: 0;
+  background-color: #000; /* match navbar color */
+  z-index: 999;
+}
+
+/* Tablet & below */
+@media (max-width: 992px) {
+  h3 {
+    font-size: 20px !important;
+  }
+}
+
+/* Small tablet */
+@media (max-width: 768px) {
+  .navbar h3 {
+    font-size: 1.5rem !important;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .nav {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .nav-link {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .navbar h3 {
+    font-size: 1.2rem !important;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Very small mobile */
+@media (max-width: 480px) {
+  .navbar h3 {
+    font-size: 15px !important;
+  }
+}
