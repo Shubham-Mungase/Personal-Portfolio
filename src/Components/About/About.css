@@ -1,19 +1,17 @@
 .about-section {
   border-radius: 20px;
-  padding: 20px 8px;
-  margin-top: 10vh; /* responsive vertical spacing */
-  text-align: center; /* center content on small screens */
+  /* box-shadow: 0 8px 25px lightblue; */
 }
 
 /* Profile Image */
 .about-img {
   width: 350px;
   height: 350px;
-  object-fit: scale-down;
+  object-fit:scale-down;
   border: 5px solid darkblue;
   border-radius: 50%;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  margin: 0 auto; /* center image */
+
 }
 
 /* Text */
@@ -21,9 +19,11 @@
   color: #333;
   line-height: 1.7;
   font-size: 1.1rem;
-  max-width: 100%;
+  max-width: 100%;   /* Prevents overflow */
   word-wrap: break-word;
+ 
 }
+
 
 .highlight {
   color: darkgoldenrod;
@@ -36,14 +36,15 @@
 @media (max-width: 992px) {
   .about-section {
     padding: 40px 15px;
-    margin-top: 8vh;
+    margin-top: 3rem;
   }
   .about-img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   .about-text {
     font-size: 1rem;
+    text-align: center;
   }
 }
 
@@ -51,7 +52,7 @@
 @media (max-width: 768px) {
   .about-section {
     padding: 30px 10px;
-    margin-top: 6vh;
+    margin-top: 10rem;
   }
   .about-img {
     width: 180px;
@@ -59,10 +60,12 @@
   }
   .about-title {
     font-size: 2rem;
+    text-align: center;
   }
   .about-text {
     font-size: 0.95rem;
     line-height: 1.6;
+    text-align: center;
   }
 }
 
@@ -70,7 +73,24 @@
 @media (max-width: 480px) {
   .about-section {
     padding: 20px 8px;
-    margin-top: 10vh;
+    margin-top: 30rem;
+  }
+  .about-img {
+    width: 150px;
+    height: 150px;
+  }
+  .about-title {
+    font-size: 1.6rem;
+  }
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 375px) {
+  .about-section {
+    padding: 20px 8px;
+    margin-top: 25rem;
   }
   .about-img {
     width: 150px;
@@ -85,21 +105,3 @@
   }
 }
 
-/* Extra Small Mobile (≤ 375px) */
-@media (max-width: 375px) {
-  .about-section {
-    padding: 15px 5px;
-    margin-top: 25vh;
-  }
-  .about-img {
-    width: 130px;
-    height: 130px;
-  }
-  .about-title {
-    font-size: 1.4rem;
-  }
-  .about-text {
-    font-size: 0.85rem;
-    line-height: 1.4;
-  }
-}
