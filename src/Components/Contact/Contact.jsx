@@ -189,7 +189,7 @@ export default function Contact() {
 
         {/* Contact Info */}
        <motion.div
-  className="col-xl-4 col-lg-5 col-md-8"
+  className="col-xl-4 col-lg-5 col-md-8 p-3"
   initial={{
     opacity: 0,
     x: isMobile ? 0 : 0,
