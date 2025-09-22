@@ -83,7 +83,7 @@
 }
 .about-section {
     padding: 20px 8px;
-    margin-top: auto; /* auto adjusts in flex layout */
+    margin-top: 20%; /* auto adjusts in flex layout */
 }
 
   .about-img {
