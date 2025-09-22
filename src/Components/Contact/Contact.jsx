@@ -192,7 +192,7 @@ export default function Contact() {
   className="col-xl-4 col-lg-5 col-md-8"
   initial={{
     opacity: 0,
-    x: isMobile ? 0 : 50,
+    x: isMobile ? 0 : 0,
     y: isMobile ? 50 : 0,
   }}
   whileInView={{ opacity: 1, x: 0, y: 0 }}
