@@ -71,13 +71,24 @@
 
 /* Small Mobile (≤ 480px) */
 @media (max-width: 480px) {
-  .about-section {
+  /* .about-section {
     padding: 20px 8px;
-    margin-top: 25rem;
-  }
+    margin-top: 28rem;
+  } */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical alignment */
+}
+.about-section {
+    padding: 20px 8px;
+    margin-top: auto; /* auto adjusts in flex layout */
+}
+
   .about-img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
   }
   .about-title {
     font-size: 1.6rem;
