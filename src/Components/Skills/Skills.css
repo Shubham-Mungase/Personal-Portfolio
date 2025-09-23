@@ -32,4 +32,23 @@
 .skill-name {
   font-size: 1rem;
   font-weight: 600;
+  overflow-wrap: break-word;
+}
+
+/* Tablet: 2 cards per row */
+@media (max-width: 992px) {
+ .skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
+}
+
+/* Mobile: 1 card per row */
+@media (max-width: 576px) {
+  .skill-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
 }

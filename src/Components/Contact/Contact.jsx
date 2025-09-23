@@ -7,23 +7,10 @@ import emailjs from "@emailjs/browser";
 import './Contact.css';
 import SectionHeader from '../SectionHeader/SectionHeader';
 
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < breakpoint);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [breakpoint]);
-
-  return isMobile;
-}
-
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({});
   const [sending, setSending] = useState(false);
-  const isMobile = useIsMobile(); 
 
   const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -105,7 +92,7 @@ export default function Contact() {
       {/* Heading */}
       <motion.div
         className="col-12 text-center mt-5 mb-0"
-        initial={{ opacity: 0, y: -50 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
@@ -119,12 +106,8 @@ export default function Contact() {
         {/* Contact Form */}
         <motion.div
           className="col-xl-6 col-lg-7 col-md-8"
-          initial={{
-            opacity: 0,
-            x: isMobile ? 0 : -50,
-            y: isMobile ? 50 : 0,
-          }}
-          whileInView={{ opacity: 1, x: 0, y: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <form onSubmit={handleSubmit} noValidate className="form-container p-4 p-md-5">
@@ -188,66 +171,61 @@ export default function Contact() {
         </motion.div>
 
         {/* Contact Info */}
-       <motion.div
-  className="col-xl-4 col-lg-5 col-md-8 p-3"
-  initial={{
-    opacity: 0,
-    x: isMobile ? 0 : 0,
-    y: isMobile ? 50 : 0,
-  }}
-  whileInView={{ opacity: 1, x: 0, y: 0 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
->
-  <div className="info-container h-100 p-4 p-md-5">
-    <h3 className="mb-4">Contact Information</h3>
+        <motion.div
+          className="col-xl-4 col-lg-5 col-md-8 p-3"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        >
+          <div className="info-container h-100 p-4 p-md-5">
+            <h3 className="mb-4">Contact Information</h3>
 
-    <div className="contact-info-item mb-4">
-      <div className="d-flex align-items-center mb-2">
-        <h5 className="mb-0">Email</h5>
-      </div>
-      <p className="ms-5">mungaseshubham777@gmail.com</p>
-    </div>
+            <div className="contact-info-item mb-4">
+              <div className="d-flex align-items-center mb-2">
+                <h5 className="mb-0">Email</h5>
+              </div>
+              <p className="ms-5 ">mungaseshubham777@gmail.com</p>
+            </div>
 
-    <div className="contact-info-item mb-4">
-      <div className="d-flex align-items-center mb-2">
-        <h5 className="mb-0">Mobile No</h5>
-      </div>
-      <p className="ms-5">+91 7499028133</p>
-    </div>
+            <div className="contact-info-item mb-4">
+              <div className="d-flex align-items-center mb-2">
+                <h5 className="mb-0">Mobile No</h5>
+              </div>
+              <p className="ms-5">+91 7499028133</p>
+            </div>
 
-    <div className="contact-info-item mb-4">
-      <div className="d-flex align-items-center mb-2">
-        <h5 className="mb-0">Address</h5>
-      </div>
-      <p className="ms-5">
-        At post Dedgaon, Newasa,
-        <br />
-        Ahilyanagar, Maharashtra
-      </p>
-    </div>
+            <div className="contact-info-item mb-4">
+              <div className="d-flex align-items-center mb-2">
+                <h5 className="mb-0">Address</h5>
+              </div>
+              <p className="ms-5">
+                At post Dedgaon, Newasa,
+                <br />
+                Ahilyanagar, Maharashtra
+              </p>
+            </div>
 
-    {/* Social Media Section */}
-    <div className="social-links mt-1">
-      <h5 className="mb-3">Follow Me</h5>
-      <div className="d-flex gap-5 ms-2">
-        <a href="https://www.linkedin.com/in/shubham-mungase-b635222a5/" target="_blank" rel="noreferrer" className="social-link">
-          <i className="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://github.com/shubham-mungase/" target="_blank" rel="noreferrer" className="social-link">
-          <i className="fab fa-github fa-2x"></i>
-        </a>
-        <a href="https://www.youtube.com/@Syntax-Shubham" target="_blank" rel="noreferrer" className="social-link" aria-disabled>
-  <i className="fab fa-youtube fa-2x"></i>
-</a>
+            {/* Social Media Section */}
+            <div className="social-links mt-1">
+              <h5 className="mb-3">Follow Me</h5>
+              <div className="d-flex flex-wrap gap-3 ms-2">
+                <a href="https://www.linkedin.com/in/shubham-mungase-b635222a5/" target="_blank" rel="noreferrer" className="social-link">
+                  <i className="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/shubham-mungase/" target="_blank" rel="noreferrer" className="social-link">
+                  <i className="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.youtube.com/@Syntax-Shubham" target="_blank" rel="noreferrer" className="social-link">
+                  <i className="fab fa-youtube fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/shubham.000.777/" target="_blank" rel="noreferrer" className="social-link">
+                  <i className="fab fa-instagram fa-2x"></i>
+                </a>
+              </div>
+            </div>
 
-        <a href="https://www.instagram.com/shubham.000.777/" target="_blank" rel="noreferrer" className="social-link">
-          <i className="fab fa-instagram fa-2x"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</motion.div>
-
+          </div>
+        </motion.div>
       </div>
 
       <ToastContainer />

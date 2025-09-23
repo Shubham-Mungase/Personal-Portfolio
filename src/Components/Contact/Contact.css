@@ -4,6 +4,13 @@
   padding: 10px 20px;
 }
 
+.contact-info-item p {
+  word-wrap: break-word;
+  word-break: break-all;   /* breaks inside long strings */
+  overflow-wrap: break-word;
+  font-size: 0.95rem;      /* default */
+}
+
 /* Form container */
 .form-container {
   background: #fff;
@@ -91,6 +98,39 @@ color: darkmagenta;/* Bootstrap primary blue */
 }
 
 @media (max-width: 576px) {
+  .contact-section {
+    padding: 50px 15px;
+  }
+  .form-container,
+  .info-container {
+    padding: 25px !important;
+  }
+  .info-container h3 {
+    font-size: 1.5rem;
+  }
+  .info-container p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 50px 15px;
+  }
+  .form-container,
+  .info-container {
+    padding: 25px !important;
+  }
+  .info-container h3 {
+    font-size: 1.5rem;
+  }
+  .info-container p {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 375px) {
   .contact-section {
     padding: 50px 15px;
   }

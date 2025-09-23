@@ -36,11 +36,10 @@
 @media (max-width: 992px) {
   .about-section {
     padding: 40px 15px;
-    margin-top: 3rem;
   }
   .about-img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
   .about-text {
     font-size: 1rem;
@@ -52,7 +51,6 @@
 @media (max-width: 768px) {
   .about-section {
     padding: 30px 10px;
-    margin-top: 10rem;
   }
   .about-img {
     width: 180px;
@@ -73,7 +71,6 @@
 @media (max-width: 480px) {
   .about-section {
     padding: 20px 8px;
-    margin-top: 30rem;
   }
   .about-img {
     width: 150px;
@@ -90,7 +87,23 @@
 @media (max-width: 375px) {
   .about-section {
     padding: 20px 8px;
-    margin-top: 25rem;
+  }
+  .about-img {
+    width: 150px;
+    height: 150px;
+  }
+  .about-title {
+    font-size: 1.6rem;
+  }
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 325px) {
+  .about-section {
+    padding: 20px 8px;
   }
   .about-img {
     width: 150px;

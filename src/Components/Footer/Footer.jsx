@@ -39,6 +39,9 @@ export default function Footer() {
               <a href="https://linkedin.com/in/shubham-mungase-b635222a5" target="_blank" rel="noreferrer" className="footer-icon">
                 <i className="fab fa-linkedin fa-lg"></i>
               </a>
+               <a href="https://www.youtube.com/@Syntax-Shubham" target="_blank" rel="noreferrer" className="footer-icon">
+      <i className="fab fa-youtube fa-lg"></i>
+    </a>
               <a href="https://www.instagram.com/shubham.000.777/" className="footer-icon">
                 <i className="fab fa-instagram fa-lg"></i>
               </a>

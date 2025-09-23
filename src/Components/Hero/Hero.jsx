@@ -10,7 +10,7 @@ const openResume = () => {
   window.open("/Mungase_Shubham_Java_Dev_Testing_Resume.pdf", "_blank"); // opens the PDF in a new tab
 };
   return (
-    <section className="hero-section container-fluid vh-100 d-flex align-items-center" id='home'>
+    <section className="hero-section container-fluid d-flex align-items-center" id='home'>
       <div className="row w-100 align-items-center justify-content-center g-0">
 
         {/* Text Section */}

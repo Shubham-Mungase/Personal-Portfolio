@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-bottom: 5px;
 }
 
 .hero-text {
@@ -19,7 +20,7 @@
 .hero-image img {
   max-width: 100%;
   max-height: 33rem;
-  filter: drop-shadow(0 0 5px rgb(197, 42, 184));
+  filter: drop-shadow(0 0 3px rgb(197, 42, 184));
   border: 3px solid #8B008B;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 20px;
@@ -27,16 +28,6 @@
   border-left-width: 20px;
   border-top-width: 5px;
   border-bottom-width: 3px;
-}
-
-/* Glow Animation */
-@keyframes pulseGlow {
-  from {
-    filter: drop-shadow(0 0 5px darkmagenta);
-  }
-  to {
-    filter: drop-shadow(0 0 10px darkmagenta);
-  }
 }
 
 /* Tablet & below */
