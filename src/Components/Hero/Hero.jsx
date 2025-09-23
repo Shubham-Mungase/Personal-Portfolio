@@ -48,6 +48,7 @@ const openResume = () => {
             src={heroImg}
             alt="Hero"
             className="img-fluid "
+            loading='lazy'
           />
         </motion.div>
 

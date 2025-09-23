@@ -21,6 +21,7 @@ export default function About() {
             src={heroImg}
             alt="Shubham Mungase"
             className="about-img shadow-lg"
+            loading="lazy"
           />
         </motion.div>
 
