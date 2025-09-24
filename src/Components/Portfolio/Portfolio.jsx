@@ -18,7 +18,7 @@ export default function Portfolio() {
       tech: ["React", "Bootstrap", "Framer Motion"],
       github: "https://github.com/Shubham-Mungase/Personal-Portfolio",
       status:"Completed",
-      demo: "https://youtu.be/6T4M7PqQk_0" 
+      demo: "https://www.youtube.com/watch?v=6T4M7PqQk_0" 
       ,
        mode:" "
     },
