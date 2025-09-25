@@ -29,7 +29,7 @@ export default function Portfolio() {
       tech: ["Java", "Jsp", "Bootstrap", "MySql","Javascript"],
       github: "https://github.com/Shubham-Mungase/Project-Service-Provider/tree/main/java",
        status:"Completed",
-      demo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      demo: "https://www.youtube.com/embed/wDp9gAbPJO4?autoplay=1",
        mode:""
     },
     {
